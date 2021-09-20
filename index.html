@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="header__nav nav menu__body">
+                <div class="container">
+                    <ul class="nav__items">
+                        <li class="nav__item">
+                            <a href="#code-example" class="nav__item-link">Code Example</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__item-link">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__item-link">Education</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__item-link">About Me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#languages" class="nav__item-link">Languages</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="teaser" id="home">
+        <div class="container">
+            <div class="teaser__wrapper">
+                <img src="images/photo.jpeg" class="teaser__photo" alt="My photo">
+                <h1 class="teaser__title">Gleb Gundilovich</h1>
+                <ul class="contacts teaser__contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:gleb.gundilovich@gmail.com" class="contacts__item-link">
+                            <i class="contacts__item-icon far fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="https://github.com/glebgundilovich" class="contacts__item-link">
+                            <i class="contacts__item-icon fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="code-example" id="code-example">
+        <div class="container">
+            <div class="code-example__wrapper">
+                <h2 class="section-title code-example__title">Code Examples</h2>
+                <pre class="code-example__content">
+                <code>
+function distinct(a) {
+    let resultArr = [];
+    a.forEach(function(item){
+        if (resultArr.indexOf(item)&lt;0) resultArr.push(item);
+    });
+
+    return resultArr;
+}
+                </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills__wrapper">
+                <h2 class="section-title skills__title">Skills</h2>
+                <ul class="skills__items">
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        Basic JavaScript
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        Knockout JS
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        HTML
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        CSS
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        Less/Sass
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        PHP
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        Magento 2
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        Git
+                    </li>
+                    <li class="skills__item">
+                        <i class="skills__item-icon fas fa-check"></i>
+                        MySQL
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <div class="container">
+            <div class="education__wrapper">
+                <h2 class="section-title education__title">Education</h2>
+                <div class="education__column">
+                    <div class="education__row">
+                        <h3 class="education__subtitle">Main:</h3>
+                        <ul class="education__list">
+                            <li>Belarusian National Technical University</li>
+                        </ul>
+                    </div>
+                    <div class="education__row">
+                        <h3 class="education__subtitle">Online:</h3>
+                        <ul class="education__list">
+                            <li>Learn JavaScript</li>
+                            <li>HTMLAcademy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <h2 class="section-title about__title">About Me</h2>
+                <h4 class="about__subtitle">Junior Front-end Developer</h4>
+            </div>
+        </div>
+    </section>
+    <section class="languages" id="languages">
+        <div class="container">
+            <div class="languages__wrapper">
+                <h2 class="section-title languages__title">Languages</h2>
+                <ul class="languages__list">
+                    <li>Russian - Native Speaker</li>
+                    <li>English - B1</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="https://github.com/glebgundilovich">Github</a>
+            <span>2021</span>
+            <a href="https://rs.school/js/">
+                <img src="images/rs-school-logo.svg" alt="RS School Logo" width="73" height="26">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
